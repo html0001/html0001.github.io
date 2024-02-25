@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Anime Website</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        #message {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+    <img src="dancing-anime-girl.gif" alt="Dancing Anime Girl">
+    <script>
+        var text = "I'm not fat, I'm just big boned";
+        var i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("message").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        typeWriter();
+    </script>
+</body>
+</html>
