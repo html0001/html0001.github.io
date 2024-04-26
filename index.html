@@ -1,108 +1,52 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head> <title>kf</title><style>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
+<head>
+    <title>kf</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <!-- Your website content goes here -->
+</body>
+</html>
 
-        #overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.94);
-            backdrop-filter: blur(90px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-
-            #overlay p {
-                color: white;
-                font-size: 24px;
-                text-align: center;
-            }
-    </style>
-    <div id="overlay">
-        <p>Click anywhere</p>
-    </div>
-    <script>
-        var overlay = document.getElementById('overlay');
-        var audioPlayed = false;
-
-        // Function to play audio and hide overlay
-        function playAudio() {
-            if (!audioPlayed) {
-                var audio = new Audio('yt5s.com - Her Last Words-Courtney Parker (Lyrics) (128 kbps).mp3'); // Replace 'path_to_your_audio_file.mp3' with the actual path to your audio file
-                audio.play();
-                audioPlayed = true;
-                overlay.style.display = 'none';
-            }
-        }
-
-        // Event listener for click event
-        document.addEventListener('click', function () {
-            playAudio();
-        });
-    </script>
-
+<html>
+<head>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             background-color: black;
             color: white;
-            font-size: 50px;
             font-family: Arial, sans-serif;
         }
 
-        #kf {
-            position: absolute;
-            top: 0;
+        .service {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid white;
         }
 
-        img {
-            width: 200px;
-            height: 200px;
-        }
+            .service h2 {
+                margin: 0;
+            }
+
+            .service p {
+                margin: 10px 0;
+            }
+
+            .service a {
+                color: white;
+                text-decoration: none;
+                background-color: red;
+                padding: 10px;
+            }
     </style>
 </head>
 <body>
-    <div id="kf"></div>
-    <img src="dancing-anime-girl.gif" alt="Your GIF">
+    <div class="service">
+        <h2>Code you a website</h2>
+        <p>Price: 0.000016 BTC</p>
+        <a href="https://discord.gg/kfcodes">Buy Now</a>
 
-    <script>
-        var kfDiv = document.getElementById('kf');
-        var colors = ['red', 'white'];
-        var i = 0;
-        var text = 'kf is in your webcam';
-        var speed = 100; // Speed of typing in milliseconds
-
-        function typeWriter() {
-            if (i < text.length) {
-                kfDiv.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        setInterval(function () {
-            kfDiv.style.color = colors[i % colors.length];
-        }, 1);
-
-        typeWriter();
-    </script>
+        <!-- Add more services as needed -->
 </body>
 </html>
